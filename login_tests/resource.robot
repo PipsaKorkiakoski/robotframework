@@ -7,7 +7,7 @@ Documentation     A resource file with reusable keywords and variables.
 Library           SeleniumLibrary
 
 *** Variables ***
-${SERVER}         localhost:7272
+${SERVER}         http://www.google.com
 ${BROWSER}        Firefox
 ${DELAY}          0
 ${VALID USER}     demo
@@ -24,7 +24,7 @@ Open Browser To Login Page
     Login Page Should Be Open
 
 Login Page Should Be Open
-    Title Should Be    Login Page
+    Title Should Be    Google
 
 Go To Login Page
     Go To    ${LOGIN URL}
