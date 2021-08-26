@@ -8,4 +8,4 @@ Resource          resource.robot
 *** Test Cases ***
 Valid Login
     Open Browser To Login Page
-    [Teardown]    Close Browser
+    
