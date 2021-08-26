@@ -19,4 +19,3 @@ ${ERROR URL}      http://${SERVER}/error.html
 *** Keywords ***
 Open Browser To Login Page
     Open Browser    ${SERVER}    ${BROWSER}
-    Set Selenium Speed    ${DELAY}
