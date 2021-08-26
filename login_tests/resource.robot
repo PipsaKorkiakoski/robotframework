@@ -4,7 +4,7 @@ Documentation     A resource file with reusable keywords and variables.
 ...               The system specific keywords created here form our own
 ...               domain specific language. They utilize keywords provided
 ...               by the imported SeleniumLibrary.
-Library           SeleniumLibrary  75  5  run_on_failure=None
+Library           SeleniumLibrary    run_on_failure=Nothing    implicit_wait=0.2 seconds
 
 *** Variables ***
 ${SERVER}         https://www.pipsakorkiakoski.fi
