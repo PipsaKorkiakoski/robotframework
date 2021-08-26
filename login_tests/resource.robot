@@ -8,7 +8,7 @@ Library           SeleniumLibrary
 
 *** Variables ***
 ${SERVER}         https://www.pipsakorkiakoski.fi
-${BROWSER}        Chrome
+${BROWSER}        headlessfirefox
 ${DELAY}          0
 ${VALID USER}     demo
 ${VALID PASSWORD}    mode
