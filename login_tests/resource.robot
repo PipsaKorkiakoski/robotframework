@@ -9,12 +9,7 @@ Library           SeleniumLibrary    run_on_failure=Nothing    implicit_wait=0.2
 *** Variables ***
 ${SERVER}         https://www.pipsakorkiakoski.fi
 ${BROWSER}        headlessfirefox
-${DELAY}          0
-${VALID USER}     demo
-${VALID PASSWORD}    mode
-${LOGIN URL}      http://${SERVER}/
-${WELCOME URL}    http://${SERVER}/
-${ERROR URL}      http://${SERVER}/error.html
+
 
 *** Keywords ***
 Open Browser To Login Page
