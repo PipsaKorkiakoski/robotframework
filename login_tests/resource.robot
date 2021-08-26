@@ -7,24 +7,24 @@ Documentation     A resource file with reusable keywords and variables.
 Library           SeleniumLibrary
 
 *** Variables ***
-${SERVER}         http://www.google.com
+${SERVER}         https://www.pipsakorkiakoski.fi
 ${BROWSER}        Firefox
 ${DELAY}          0
 ${VALID USER}     demo
 ${VALID PASSWORD}    mode
 ${LOGIN URL}      http://${SERVER}/
-${WELCOME URL}    http://${SERVER}/welcome.html
+${WELCOME URL}    http://${SERVER}/
 ${ERROR URL}      http://${SERVER}/error.html
 
 *** Keywords ***
 Open Browser To Login Page
-    Open Browser    ${LOGIN URL}    ${BROWSER}
+    Open Browser    ${SERVER}    ${BROWSER}
     Maximize Browser Window
     Set Selenium Speed    ${DELAY}
-    Login Page Should Be Open
+    #Login Page Should Be Open
 
 Login Page Should Be Open
-    Title Should Be    Google
+    Title Should Be    Etusivu
 
 Go To Login Page
     Go To    ${LOGIN URL}
