@@ -9,5 +9,5 @@ Resource          resource.robot
 ${browser}        phantomjs
 
 *** Test Cases ***
-Valid Login
+Valid Go To Url
     Open Browser To Login Page    ${browser}
