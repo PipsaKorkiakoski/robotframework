@@ -5,7 +5,10 @@ Documentation     A test suite with a single test for valid login.
 ...               the imported resource file.
 Resource          resource.robot
 
+
+*** Variables ***
+${browser}        headlessfirefox
+
 *** Test Cases ***
 Valid Login
-    Open Browser To Login Page
-    
+    Open Browser To Login Page    ${browser}

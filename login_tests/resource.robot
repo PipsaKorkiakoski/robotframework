@@ -8,10 +8,11 @@ Library           Selenium2Library
 
 *** Variables ***
 ${SERVER}         https://www.pipsakorkiakoski.fi
-${BROWSER}        phantomjs
+#${BROWSER}        headlesschrome
 
 
 
 *** Keywords ***
 Open Browser To Login Page
-    Open Browser    ${SERVER}    ${BROWSER}
+    [Arguments]    ${browser}
+    Open Browser    ${SERVER}    ${browser}
